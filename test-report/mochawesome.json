@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-05-30T16:50:41.269Z",
+    "end": "2018-05-30T16:50:41.276Z",
+    "duration": 7,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "b8e6bcbf-4e2b-4a77-98fc-07de22a3b0b3",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "93128ea7-c678-43ad-8033-b03208792a17",
+        "title": "测试测试",
+        "fullFile": "G:\\WEB Application\\tz-date\\test\\test.test.ts",
+        "file": "\\test\\test.test.ts",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "自增测试输入1应该等于2",
+            "fullTitle": "测试测试 自增测试输入1应该等于2",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var result = test_1.default(1);\nshould_1.default(result).be.equal(2);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9967aeab-c216-4025-b9d1-4c4ee22514a8",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "9967aeab-c216-4025-b9d1-4c4ee22514a8"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}

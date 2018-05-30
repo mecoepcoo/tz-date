@@ -1,0 +1,49 @@
+{
+  "name": "tz-date",
+  "version": "0.0.1",
+  "description": "将时间格式化的工具库。",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/gulp",
+    "start": "./node_modules/.bin/gulp watch",
+    "dev": "./node_modules/.bin/gulp watch",
+    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register ./test/**/*.test.ts",
+    "test-report": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register ./test/**/*.test.ts --reporter mochawesome --reporter-options reportDir=test-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mecoepcoo/tz-date.git"
+  },
+  "keywords": [
+    "date",
+    "formate"
+  ],
+  "author": "tianzhen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mecoepcoo/tz-date/issues"
+  },
+  "homepage": "https://github.com/mecoepcoo/tz-date#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "@types/should": "^13.0.0",
+    "browserify": "^16.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^4.0.2",
+    "gulp-uglify": "^3.0.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.2",
+    "should": "^13.2.1",
+    "ts-node": "^6.0.5",
+    "tsify": "^4.0.0",
+    "typescript": "^2.8.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
