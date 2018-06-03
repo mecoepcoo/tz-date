@@ -1,12 +1,14 @@
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
 const tsProject = ts.createProject('tsconfig.json');
+const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const sourcemaps = require('gulp-sourcemaps');
 const buffer = require('vinyl-buffer');
 const browserify = require("browserify");
 const source = require('vinyl-source-stream');
 const tsify = require('tsify');
+const rollup = require('gulp-rollup');
 
 gulp.task('typescript', () => {
   return browserify({
@@ -18,8 +20,7 @@ gulp.task('typescript', () => {
   })
     .plugin(tsify)
     .bundle()
-    .on('error', showError)
-    .pipe(source('index.js'))
+    .pipe(source('bundle.min.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(uglify())
